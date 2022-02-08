@@ -16,12 +16,10 @@ export default function Inicio() {
           <button>Iniciar campeonato</button>
         </div>
         <form className="flex">
-
           {
             filmes && filmes.map((filme => (
               <Filme key={filme.id} value={filme.id} titulo={filme.titulo} ano={filme.ano} />)))
           }
-  
         </form>
       </main>
     </>

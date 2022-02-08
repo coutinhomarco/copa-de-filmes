@@ -5,11 +5,11 @@ export default function Filme({titulo, id, ano}) {
   return (
     <>
       {
-        (titulo) &&     (<div>
-          <label htmlFor={titulo} className="card-filme">
-            <input type="checkbox" name={titulo} value={id}/>
+        (titulo) &&     (<div id="external-div">
+          <label htmlFor={id} className="card-filme">
+            <input id={id} type="checkbox" name={titulo} value={id}/>
             <div className="titulo-filme">
-              <p>{titulo}</p>
+              <h4>{titulo}</h4>
               <p>{ano}</p>
             </div>
           </label>
