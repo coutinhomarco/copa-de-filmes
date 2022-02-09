@@ -9,30 +9,32 @@ export default function Inicio() {
 
   const gerenciaSelecionados = ({target}) => {
     const novoSelecionado = filmes.find((filme) => filme.id === target.value)
-    if (selecionados.find((id) => id === target.value)) {
+    if (selecionados.find((obj) => obj.id === target.value)) {
       return setSelecionados(selecionados.filter((selecionado) => selecionado.id !== target.value))
     }
     setSelecionados([...selecionados, novoSelecionado])
   }
 
-  const checaVencedor = (array, max) => {
+  const checaVencedor = (array) => {
     return array.map((__, index) => (
-      array[index].nota > array[max-index].nota ?  array[index] : array[max-index]
+      array[index].nota > array[array.length - 1 -index].nota ?  array[index] : array[array.length - 1 -index]
     ));
   }
 
   const checaBotao = () => selecionados.length === 8 ? false : true;
   const iniciaJogo = () => {
     const selecionadosOrdenados = selecionados.sort((a, b) => a.titulo.localeCompare(b.titulo))
-    const primeiraRodada = checaVencedor(selecionadosOrdenados,  7)
-    // const primeiroFinalista = checaVencedor(primeiraRodada ,  1)
-    console.log(primeiraRodada);
+    const primeiraRodada = checaVencedor(selecionadosOrdenados).slice(0,4)
+    const primeiroFinalista = checaVencedor(primeiraRodada.slice(0,2) ,  1).slice(0,1)
+    const segundoFinalista = checaVencedor(primeiraRodada.slice(2,4) ,  1).slice(0,1)
+    const final = [...primeiroFinalista, ...segundoFinalista]
+    setSelecionados(final)
   }
   return (
     <>
       <header className="App-header">
         <h1>Copa de Filmes</h1>
-        <h2>Fase de seleção</h2>
+        <p>Fase de seleção</p>
       </header>
       <main>
         <div className="flex">
