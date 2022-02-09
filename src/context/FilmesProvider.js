@@ -11,12 +11,14 @@ export default function FilmesProvider({children}) {
 
   const [selecionados, setSelecionados] = useState([])
 
+  const [finalistas, setFinalistas] = useState([])
+
   useEffect(async () => {
     const filmesRequeridos = await fetchFilmes(setCarregando)
     setFilmes(filmesRequeridos)
   },[])
 
-  const context_value = {filmes, carregando, setSelecionados, selecionados} 
+  const context_value = {filmes, carregando, setSelecionados, selecionados, setFinalistas, finalistas} 
 
   return (
     <FilmesContext.Provider value={context_value}>

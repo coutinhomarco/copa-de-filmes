@@ -5,7 +5,7 @@ import Carregando from "../components/Carregando";
 import {Link} from 'react-router-dom'
 
 export default function Inicio() {
-  const { filmes, carregando, setSelecionados, selecionados } = useContext(FilmesContext)
+  const { filmes, carregando, setSelecionados, selecionados, setFinalistas } = useContext(FilmesContext)
 
   const gerenciaSelecionados = ({target}) => {
     const novoSelecionado = filmes.find((filme) => filme.id === target.value)
@@ -28,7 +28,7 @@ export default function Inicio() {
     const primeiroFinalista = checaVencedor(primeiraRodada.slice(0,2) ,  1).slice(0,1)
     const segundoFinalista = checaVencedor(primeiraRodada.slice(2,4) ,  1).slice(0,1)
     const final = [...primeiroFinalista, ...segundoFinalista]
-    setSelecionados(final)
+    setFinalistas(final)
   }
   return (
     <>

@@ -2,7 +2,7 @@ import { useContext } from "react";
 import { FilmesContext } from "../context/FilmesContext";
 
 export default function Placar() {
-  const {selecionados} = useContext(FilmesContext)
+  const { finalistas  } = useContext(FilmesContext)
   return (
     <>
       <header className="App-header">
@@ -12,7 +12,7 @@ export default function Placar() {
       <main>
         <ol>
           {
-            selecionados && selecionados.sort((a,b) => b.nota-a.nota)
+            finalistas && finalistas.sort((a,b) => b.nota-a.nota)
               .map((selecionado) => <li key={selecionado.id}>{selecionado.titulo}</li>)
           }
         </ol>
