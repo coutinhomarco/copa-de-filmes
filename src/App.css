@@ -1,3 +1,7 @@
+body{
+  background-color: rgb(250, 249, 247);
+}
+
 .App {
   text-align: center;
 }
@@ -49,6 +53,10 @@ div > button {
   text-align: center;
 }
 
+#carregando {
+  text-align: center;
+}
+
 .titulo-filme{
   margin-left: 30px;
 }
@@ -56,4 +64,10 @@ div > button {
 #external-div{
   max-width: 430px;
   margin: 5px 0;
+}
+
+.resultado {
+  border: 1px solid black;
+  margin: 5px;
+  max-width:200px;
 }

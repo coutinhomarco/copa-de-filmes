@@ -1,19 +1,19 @@
 import PropTypes from "prop-types"
-// import React from 'react';
 
-export default function Filme({titulo, id, ano}) {
+export default function Filme({titulo, value, ano}) {
   return (
     <>
       {
-        (titulo) &&     (<div id="external-div">
-          <label htmlFor={id} className="card-filme">
-            <input id={id} type="checkbox" name={titulo} value={id}/>
-            <div className="titulo-filme">
-              <h4>{titulo}</h4>
-              <p>{ano}</p>
-            </div>
-          </label>
-        </div>)
+        (titulo) &&     (
+          <div value="external-div">
+            <label htmlFor={value} className="card-filme">
+              <input id={value} type="checkbox" name={titulo} value={value}/>
+              <div className="titulo-filme">
+                <h4>{titulo}</h4>
+                <p>{ano}</p>
+              </div>
+            </label>
+          </div>)
       }
     </>
   );
@@ -21,6 +21,6 @@ export default function Filme({titulo, id, ano}) {
 
 Filme.propTypes = {
   ano: PropTypes.number.isRequired,
-  id: PropTypes.string,
+  value: PropTypes.string,
   titulo: PropTypes.string.isRequired
 }
