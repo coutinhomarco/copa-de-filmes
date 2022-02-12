@@ -25,7 +25,7 @@ app.post('/', (req, res) => {
     const primeiroFinalista = checaVencedor(primeiraRodada.slice(0,2), 1).slice(0,1)
     const segundoFinalista = checaVencedor(primeiraRodada.slice(2,4), 1).slice(0,1)
     const final = [...primeiroFinalista, ...segundoFinalista]
-    res.json(final.sort((a,b) => b.nota-a.nota));
+    res.status(200).json(final.sort((a,b) => b.nota-a.nota));
   } catch (error) {
     res.status(400).send(err)
   }
