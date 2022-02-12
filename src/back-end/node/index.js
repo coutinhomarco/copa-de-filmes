@@ -31,10 +31,7 @@ app.post('/', (req, res) => {
   }
 })
 
-app.listen(3001, () => {
-  console.log('Aplicação rodando na porta 3001');
-});
-
+app.listen(3001);
 
 const checaVencedor = (array) => {
   return array.map((__, index) => (

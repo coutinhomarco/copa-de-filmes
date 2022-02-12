@@ -1,9 +1,11 @@
 /* eslint-disable no-undef */
-const {expect} = require('chai');
+const checaVencedor = require('./index')
 
 describe('Testa funcionamento função checaVencedor', () => {
-  const {checaVencedor} = require('./index')
+  it('checaVencedor existe', () => {
+    expect(checaVencedor).toBeDefined()
+  })
   it('checaVencedor é uma função', () => {
-    expect(checaVencedor).to.exist()
+    expect(typeof checaVencedor).toEqual('function')
   })
 })
