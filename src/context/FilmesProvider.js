@@ -26,5 +26,5 @@ export default function FilmesProvider({children}) {
 }
 
 FilmesProvider.propTypes = {
-  children: PropTypes.any
+  children: PropTypes.node
 }
