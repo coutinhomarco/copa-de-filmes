@@ -12,12 +12,12 @@ export default function Placar() {
       </header>
       <main id="colocacao">
         {
-          (finalistas.length === 0) ? <h2>Você ainda não selecionou os filmes</h2> : (        <ol>
-            {
-              finalistas && finalistas.sort((a,b) => b.nota-a.nota)
-                .map((selecionado) => <li key={selecionado.id}>{selecionado.titulo}</li>)
-            }
-          </ol>)
+          (finalistas.length === 0) ? <h2>Você ainda não selecionou os filmes</h2> : ( 
+            <ol>
+              {
+                finalistas.map((selecionado) => <li key={selecionado.id}>{selecionado.titulo}</li>)
+              }
+            </ol>)
 
         }
       </main>
