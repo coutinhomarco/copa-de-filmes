@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import React from "react";
 import PropTypes from "prop-types"
 import {  FilmesContext } from './FilmesContext';
 import {  fetchFilmes } from '../helpers/fetchAPI'

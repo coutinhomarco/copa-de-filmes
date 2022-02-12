@@ -1,4 +1,4 @@
-import { useContext } from "react";
+import React, { useContext } from "react";
 import { FilmesContext } from "../context/FilmesContext";
 
 export default function Placar() {

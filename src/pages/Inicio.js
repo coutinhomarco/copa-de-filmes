@@ -1,4 +1,4 @@
-import { useContext, useEffect } from "react";
+import React, { useContext, useEffect } from "react";
 import {FilmesContext} from "../context/FilmesContext";
 import Filme from '../components/Filme';
 import Carregando from "../components/Carregando";
@@ -28,7 +28,7 @@ export default function Inicio() {
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ selecionados: selecionadosOrdenados })
     };
-    fetch('http://localhost:3002/', metodoRequisicao)
+    fetch('http://localhost:3001/', metodoRequisicao)
       .then(response => response.json())
       .then(json => setFinalistas(json));
   }
