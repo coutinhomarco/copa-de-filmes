@@ -17,9 +17,10 @@ Tecnologias utilizadas
 
 
 Para fazer o clone do repositório digite o seguinte comando em seu terminal 
-    ```
+
+    
     git clone git@github.com:coutinhomarco/copa-de-filmes.git
-    ```
+    
 Após realizar o clone do projeto, entre na pasta raiz do mesmo e digite 
 ```
 npm install
