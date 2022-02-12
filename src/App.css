@@ -1,21 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital@0;1&display=swap');
+
+@media screen and (max-width:1366px) {
+  body {
+    background-color: red;
+  }
+  form > div {
+    flex-basis: 50%;
+    height: 120px;
+  }
+}
+
+body{
+  background-color: #171717;
+  font-family: 'Poppins', sans-serif;
+}
+
 .App {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  background-color: #52489C;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -24,15 +29,118 @@
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.App-header p {
+  font-size: 0.9em
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+header > hr {
+  width: 100px;
+}
+
+main > .flex {
+  margin: 20px 40px;
+  color: rgb(243, 240, 240);
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+main {
+  width: 100%;
+}
+
+form > div {
+  flex-basis: 25%;
+  height: 120px;
+}
+
+form > div p{
+  text-align: center;
+  justify-self: center;
+  margin: 5px;
+  width: fit-content;
+}
+
+a > button {
+  background-color:#F45B69;
+  border-radius: 3px;
+  color: #EBF5EE;
+  font-size: 19px;
+  font-weight: bold;
+  height: 60px;
+  width: 190px;
+}
+
+a > button:hover {
+  background-color:#52489C;
+  color: #f6faf7;
+  transition: 1s;
+}
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.card-filme {
+  align-items: center;
+  justify-content: space-between;
+  background-color:#171717;
+  color: rgb(246, 241, 241);
+  display: flex;
+  font-size: 16px;
+  height:110px;
+  text-align: center;
+  margin: 5px;
+  outline: 1px solid white;
+}
+
+.card-filme input {
+  margin-left: 15px;
+}
+
+.card-filme p {
+  margin-right: 30px;
+}
+
+
+
+#carregando {
+  text-align: center;
+}
+
+.titulo-filme{
+  display: flex;
+  align-items:center;
+  justify-content:space-between;
+  height: 102px;
+  max-width: fit-content;
+}
+
+#external-div{
+  max-width: 430px;
+}
+
+.resultado {
+  border: 1px solid black;
+  margin: 5px;
+  max-width:200px;
+}
+
+#colocacao{
+  background-color:rgb(209, 216, 214);
+  border-radius: 5px;
+  color: #171717;
+  display: flex;
+  font-size:1.3em;
+  font-weight:bold;
+  justify-content:center;
+  line-height:1.5em;
+  margin:20px;
+  max-width:80%;
+  padding:2% 0;
+}
+
+#root > main {
+  margin: 20px auto;
 }
