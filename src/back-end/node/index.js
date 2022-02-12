@@ -21,10 +21,7 @@ app.get('/', async (_req, res) => {
 app.post('/', (req, res) => {
   try {
     const {selecionados} = req.body;
-    const primeiraRodada = checaVencedor(selecionados).slice(0,4)
-    const primeiroFinalista = checaVencedor(primeiraRodada.slice(0,2), 1).slice(0,1)
-    const segundoFinalista = checaVencedor(primeiraRodada.slice(2,4), 1).slice(0,1)
-    const final = [...primeiroFinalista, ...segundoFinalista]
+    const final = retornaFinalistas(selecionados)
     res.status(200).json(final.sort((a,b) => b.nota-a.nota));
   } catch (error) {
     res.status(400).send(err)
@@ -32,6 +29,13 @@ app.post('/', (req, res) => {
 })
 
 app.listen(3001);
+
+const retornaFinalistas = (selecionados) => {
+  const primeiraRodada = checaVencedor(selecionados).slice(0,4)
+  const primeiroFinalista = checaVencedor(primeiraRodada.slice(0,2), 1).slice(0,1)
+  const segundoFinalista = checaVencedor(primeiraRodada.slice(2,4), 1).slice(0,1)
+  return [...primeiroFinalista, ...segundoFinalista]
+}
 
 const checaVencedor = (array) => {
   return array.map((__, index) => (
