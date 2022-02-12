@@ -19,6 +19,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
+    "back": "node ./src/back-end/node/index.js && node ./src/back-end/node/app.js",
     "build": "react-scripts build",
     "test": "jest",
     "eject": "react-scripts eject",
