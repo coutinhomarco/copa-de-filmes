@@ -7,9 +7,13 @@ export default function Placar() {
     <>
       <header className="App-header">
         <h1>Resultado final</h1>
+        <hr />
         <p>Confira o resultado do seu torneio</p>
       </header>
-      <main>
+      <main id="colocacao">
+        {
+          (finalistas.length === 0) && <h2>Você ainda não selecionou os filmes</h2>
+        }
         <ol>
           {
             finalistas && finalistas.sort((a,b) => b.nota-a.nota)
