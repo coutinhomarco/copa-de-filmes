@@ -1,11 +1,15 @@
-import { useContext } from "react";
+import { useContext, useEffect } from "react";
 import {FilmesContext} from "../context/FilmesContext";
 import Filme from '../components/Filme';
 import Carregando from "../components/Carregando";
 import {Link} from 'react-router-dom'
 
 export default function Inicio() {
+
   const { filmes, carregando, setSelecionados, selecionados, setFinalistas } = useContext(FilmesContext)
+  useEffect(() => {
+    setSelecionados([])
+  }, [])
 
   const gerenciaSelecionados = ({target}) => {
     const novoSelecionado = filmes.find((filme) => filme.id === target.value)
@@ -34,6 +38,7 @@ export default function Inicio() {
     <>
       <header className="App-header">
         <h1>Copa de Filmes</h1>
+        <hr />
         <p>Fase de seleção</p>
       </header>
       <main>
