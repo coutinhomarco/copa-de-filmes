@@ -32,6 +32,7 @@ export default function Inicio() {
       .then(response => response.json())
       .then(json => setFinalistas(json));
   }
+
   return (
     <>
       <header className="App-header">
