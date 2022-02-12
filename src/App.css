@@ -95,6 +95,11 @@ a > button:hover {
   outline: 1px solid white;
 }
 
+.card-filme:hover{
+  background-color:#151515;
+  transform: scale(1.02)
+}
+
 .card-filme input {
   margin-left: 15px;
 }
