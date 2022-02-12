@@ -31,8 +31,8 @@ app.post('/', (req, res) => {
   }
 })
 
-app.listen(3002, () => {
-  console.log('Aplicação rodando na porta 3002');
+app.listen(3001, () => {
+  console.log('Aplicação rodando na porta 3001');
 });
 
 
@@ -41,3 +41,5 @@ const checaVencedor = (array) => {
     array[index].nota > array[array.length - 1 - index].nota ?  array[index] : array[array.length - 1 - index]
   ));
 }
+
+module.exports = checaVencedor;
