@@ -19,18 +19,20 @@ export default function Inicio() {
     setSelecionados([...selecionados, novoSelecionado])
   }
 
-  const checaBotao = () => selecionados.length === 8 ? false : true;
+  const checaVencedor = (array) => {
+    return array.map((__, index) => (
+      array[index].nota > array[array.length - 1 -index].nota ?  array[index] : array[array.length - 1 -index]
+    ));
+  }
 
+  const checaBotao = () => selecionados.length === 8 ? false : true;
   const iniciaJogo = () => {
     const selecionadosOrdenados = selecionados.sort((a, b) => a.titulo.localeCompare(b.titulo))
-    const metodoRequisicao = {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ selecionados: selecionadosOrdenados })
-    };
-    fetch('http://localhost:3002/', metodoRequisicao)
-      .then(response => response.json())
-      .then(json => setFinalistas(json));
+    const primeiraRodada = checaVencedor(selecionadosOrdenados).slice(0,4)
+    const primeiroFinalista = checaVencedor(primeiraRodada.slice(0,2) ,  1).slice(0,1)
+    const segundoFinalista = checaVencedor(primeiraRodada.slice(2,4) ,  1).slice(0,1)
+    const final = [...primeiroFinalista, ...segundoFinalista]
+    setFinalistas(final)
   }
   return (
     <>
