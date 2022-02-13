@@ -65,7 +65,7 @@ Partindo do pressuposto que você já instalou as dependências, para iniciar o 
 
 <h2>Testes</h2>
 
-Para criar os testes do projeto utilizei da biblioteca Jest.
+Para criar os testes do projeto utilizei da biblioteca Jest para o Back end e React testing Library para o Front.
 Os testes da API e do Front estão respectivamente nas pastas
 ```
   ./src/back-end/node/node.test.js
@@ -74,6 +74,7 @@ Os testes da API e do Front estão respectivamente nas pastas
 <h3>Como iniciar:</h3>
 
   ```
+    npm run test-back
     npm run test
   ```
 

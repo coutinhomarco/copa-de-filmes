@@ -1,8 +1,22 @@
-// import { render, screen } from '@testing-library/react';
-// import App from './App';
+/* eslint-disable no-undef */
+import { render, screen } from '@testing-library/react';
+import { MemoryRouter } from 'react-router-dom';
+import React from 'react';
+import App from './App'
+import FilmesProvider from './context/FilmesProvider'
+import '@testing-library/jest-dom'
 
-// it('Renderiza página', () => {
-//   render(<App />);
-//   const linkElement = screen.getByText(/Copa de filmes/i);
-//   expect(linkElement).toBeInTheDocument();
-// });
+test('Testa se o site renderiza', () => {
+  const wrapper = ({children}) => (
+    <MemoryRouter>
+    <FilmesProvider>
+      {children}
+    </FilmesProvider>
+    </MemoryRouter>
+  )
+
+  render(<App />, {wrapper})
+  expect(screen.getByText(/Copa/).textContent).toBe(
+    'Copa de Filmes',
+  )
+})

@@ -3,8 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@testing-library/jest-dom": "^5.16.2",
-    "@testing-library/user-event": "^13.5.0",
+    "@testing-library/jest-dom": "^5.11.9",
+    "@testing-library/react": "^11.2.5",
+    "@testing-library/user-event": "^12.6.3",
     "axios": "^0.25.0",
     "body-parser": "^1.19.1",
     "cors": "^2.8.5",
@@ -21,7 +22,8 @@
     "start": "react-scripts start",
     "back": "node ./src/back-end/node/index.js && node ./src/back-end/node/app.js",
     "build": "react-scripts build",
-    "test": "jest",
+    "test": "react-scripts test",
+    "test-back": "jest",
     "eject": "react-scripts eject",
     "dev": "nodemon index.js"
   },
@@ -44,6 +46,7 @@
     ]
   },
   "devDependencies": {
+    "@testing-library/react": "^12.1.2",
     "eslint": "^8.8.0",
     "eslint-plugin-react": "^7.28.0"
   }
