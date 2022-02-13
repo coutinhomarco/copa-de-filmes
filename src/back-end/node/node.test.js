@@ -6,7 +6,7 @@ const app = require('./index.js')
 
 let server
 beforeEach((done) => {
-  server = app.listen(3001, (err) => {
+  server = app.listen(3002, (err) => {
     if (err) return done(err)
     done()
   })
@@ -45,11 +45,11 @@ describe('Testa funcionamento retornaFinalistas', () => {
 
 describe('Testa retorno da API',  () => {
   it('Testa se retorno da requisição é definido', async () => {
-    const response = await axios('http://localhost:3001')
+    const response = await axios('http://localhost:3002')
     expect(response.data).toBeDefined()
   })
   it('Testa se retorno da requisição é o esperado', async () => {
-    const response = await axios('http://localhost:3001')
+    const response = await axios('http://localhost:3002')
     expect(response.data).toStrictEqual(filmes)
   })
   it('Testa se retorno da requisição POST é o esperado', async () => {
@@ -58,7 +58,7 @@ describe('Testa retorno da API',  () => {
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ selecionados })
     };
-    const response = await axios('http://localhost:3001', metodoRequisicao)
+    const response = await axios('http://localhost:3002', metodoRequisicao)
     expect(response.data).toStrictEqual(finalistas)
   })
 })
