@@ -3,6 +3,7 @@ const axios = require('axios');
 const express = require('express');
 const bodyParser = require('body-parser');
 const cors = require('cors');
+const retornaFinalistas = require('../../helpers/retornaFinalistas');
 
 const app = express();
 app.use(bodyParser.json());
@@ -16,28 +17,16 @@ app.get('/', async (_req, res) => {
   catch (err) {
     res.status(400).send(err);
   }
-})
+});
 
 app.post('/', (req, res) => {
   try {
     const {selecionados} = req.body;
-    const primeiraRodada = checaVencedor(selecionados).slice(0,4)
-    const primeiroFinalista = checaVencedor(primeiraRodada.slice(0,2), 1).slice(0,1)
-    const segundoFinalista = checaVencedor(primeiraRodada.slice(2,4), 1).slice(0,1)
-    const final = [...primeiroFinalista, ...segundoFinalista]
-    res.json(final);
+    const final = retornaFinalistas(selecionados)
+    res.status(200).json(final);
   } catch (error) {
-    res.status(400).send(err)
+    res.status(400).json(error)
   }
-})
-
-app.listen(3002, () => {
-  console.log('Aplicação rodando na porta 3002');
 });
 
-
-const checaVencedor = (array) => {
-  return array.map((__, index) => (
-    array[index].nota > array[array.length - 1 - index].nota ?  array[index] : array[array.length - 1 - index]
-  ));
-}
+module.exports = app;

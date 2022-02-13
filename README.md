@@ -1,7 +1,5 @@
 # Copa de filmes
 
-Aplicação composta por um Front End que consome as API's e um Back End que cuida das requisições e regras do torneio.
-
 <h2>Front End</h2>
 
 Tecnologias utilizadas
@@ -13,7 +11,14 @@ Tecnologias utilizadas
   <li>Eslint para padronização do código</li>
 </ul>
 
-<h3>Como testar:</h3>
+<h3>Como iniciar:</h3>
+
+
+Para fazer o clone do repositório digite o seguinte comando em seu terminal
+
+```
+git clone git@github.com:coutinhomarco/copa-de-filmes.git
+```
 
 
 Para fazer o clone do repositório digite o seguinte comando em seu terminal 
@@ -21,6 +26,7 @@ Para fazer o clone do repositório digite o seguinte comando em seu terminal
     
     git clone git@github.com:coutinhomarco/copa-de-filmes.git
     
+
 Após realizar o clone do projeto, entre na pasta raiz do mesmo e digite 
 ```
 npm install
@@ -35,69 +41,55 @@ Agora é só iniciar a aplicação com
 ```
 npm start
 ```
-## Available Scripts
 
-In the project directory, you can run:
+<h2>Back End</h2>
 
-### `npm start`
+<h3>.NET</h3>
+<p>Tentei realizar a API via .NET mas por não ter tido contato em nenhum momento com o mesmo acabei não conseguindo. Os arquivos da tentativa estão na pasta api na raiz do projeto</p>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+<h3>Node.js</h3>
+<p>Para não deixar em branco realizei o back end em Node.js, ferramenta que estou estudando no meu dia a dia. Os arquivos estão no caminho 
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+```
+  ./src/back-end/node 
+```
+com referência na raiz do projeto</p>
 
-### `npm test`
+Utilizei da biblioteca Express para realizar a construção da API.
+As funções que utilizei para checar os vencedores estão na pasta
+```
+  ./src/helpers
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+<h3>Como iniciar:</h3>
 
-### `npm run build`
+Partindo do pressuposto que você já instalou as dependências, para iniciar o back-end basta executar o comando 
+```
+  npm run back
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+<h2>Testes</h2>
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Para criar os testes do projeto utilizei da biblioteca Jest para o Back end e React testing Library para o Front.
+Os testes da API e do Front estão respectivamente nas pastas
+```
+  ./src/back-end/node/node.test.js
+  ./src/App.test.js
+```
+<h3>Como iniciar:</h3>
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Inicie a API com 
+```
+  npm run back
+```
+Inicie o script React com
+```
+npm start
+```
+e agora é só rodar
 
-### `npm run eject`
+  ```
+    npm run jest //para testes do backend
+    npm test //para testes do front
+  ```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
