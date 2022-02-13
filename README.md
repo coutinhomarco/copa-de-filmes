@@ -40,7 +40,7 @@ npm start
 <h2>Back End</h2>
 
 <h3>.NET</h3>
-<p>Tentei realizar a API via .NET mas por não ter tido contato em nenhum momento com o mesmo acabei não conseguindo. Os arquivos da tentativa estão na pasta ```api``` na raiz do projeto</p>
+<p>Tentei realizar a API via .NET mas por não ter tido contato em nenhum momento com o mesmo acabei não conseguindo. Os arquivos da tentativa estão na pasta api na raiz do projeto</p>
 
 <h3>Node.js</h3>
 <p>Para não deixar em branco realizei o back end em Node.js, ferramenta que estou estudando no meu dia a dia. Os arquivos estão no caminho 
@@ -72,6 +72,8 @@ Os testes da API e do Front estão respectivamente nas pastas
   ./src/App.test.js
 ```
 <h3>Como iniciar:</h3>
-```
-  npm run test
-```
+
+  ```
+    npm run test
+  ```
+
