@@ -62,3 +62,16 @@ Partindo do pressuposto que você já instalou as dependências, para iniciar o 
 ```
   npm run back
 ```
+
+<h2>Testes</h2>
+
+Para criar os testes do projeto utilizei da biblioteca Jest.
+Os testes da API e do Front estão respectivamente nas pastas
+```
+  ./src/back-end/node/node.test.js
+  ./src/App.test.js
+```
+<h3>Como iniciar:</h3>
+```
+  npm run test
+```
