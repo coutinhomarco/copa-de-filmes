@@ -1,19 +1,5 @@
 # Copa de filmes
 
-<h2>Front End</h2>
-
-Tecnologias utilizadas
-
-<ul>
-  <li>React com componentes funcionais</li>
-  <li>Context API e React Hooks para gerenciamento de estado</li>
-  <li>React Router Dom para criação das rotas da Single Page Aplication</li>
-  <li>Eslint para padronização do código</li>
-</ul>
-
-<h3>Como iniciar:</h3>
-
-
 Para fazer o clone do repositório digite o seguinte comando em seu terminal
 
 ```
@@ -29,11 +15,6 @@ ou
 yarn install
 ```
 
-Agora é só iniciar a aplicação com
-
-```
-npm start
-```
 
 <h2>Back End</h2>
 
@@ -56,10 +37,29 @@ As funções que utilizei para checar os vencedores estão na pasta
 
 <h3>Como iniciar:</h3>
 
-Partindo do pressuposto que você já instalou as dependências, para iniciar o back-end basta executar o comando 
+Para iniciar o back-end basta executar o comando 
 ```
   npm run back
 ```
+<h2>Front End</h2>
+
+Tecnologias utilizadas
+
+<ul>
+  <li>React com componentes funcionais</li>
+  <li>Context API e React Hooks para gerenciamento de estado</li>
+  <li>React Router Dom para criação das rotas da Single Page Aplication</li>
+  <li>Eslint para padronização do código</li>
+</ul>
+
+<h3>Como iniciar:</h3>
+
+Para iniciar a aplicação execute
+
+```
+npm start
+```
+
 
 <h2>Testes</h2>
 
