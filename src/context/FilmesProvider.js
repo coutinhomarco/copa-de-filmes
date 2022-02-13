@@ -14,7 +14,8 @@ export default function FilmesProvider({children}) {
   const [finalistas, setFinalistas] = useState([])
 
   useEffect(async () => {
-    const filmesRequeridos = await fetchFilmes(setCarregando)
+    const filmesRequeridos = await fetchFilmes()
+    setCarregando(false)
     setFilmes(filmesRequeridos)
   },[])
 
