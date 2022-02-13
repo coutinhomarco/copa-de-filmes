@@ -25,7 +25,7 @@ app.post('/', (req, res) => {
     const final = retornaFinalistas(selecionados)
     res.status(200).json(final);
   } catch (error) {
-    res.status(400).send(error)
+    res.status(400).json(error)
   }
 });
 
