@@ -1,7 +1,5 @@
 # Copa de filmes
 
-Aplicação composta por um Front End que consome as API's e um Back End que cuida das requisições e regras do torneio.
-
 <h2>Front End</h2>
 
 Tecnologias utilizadas
@@ -74,7 +72,7 @@ Os testes da API e do Front estão respectivamente nas pastas
 <h3>Como iniciar:</h3>
 
   ```
-    npm run test-back
-    npm run test
+    npm run test-back //para testes do backend
+    npm test //para testes do front
   ```
 
