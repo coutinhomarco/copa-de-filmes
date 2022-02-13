@@ -40,10 +40,21 @@ npm start
 <h2>Back End</h2>
 
 <h3>.NET</h3>
-<p>Tentei realizar a API via .NET mas por não ter tido contato em nenhum momento com o mesmo antes acabei não conseguindo. Os arquivos da tentativa estão na pasta api na raiz do projeto</p>
+<p>Tentei realizar a API via .NET mas por não ter tido contato em nenhum momento com o mesmo acabei não conseguindo. Os arquivos da tentativa estão na pasta ```api``` na raiz do projeto</p>
 
 <h3>Node.js</h3>
-<p>Para não deixar em branco realizei o back end em Node.js, ferramenta que estou estudando no meu dia a dia.</p>
+<p>Para não deixar em branco realizei o back end em Node.js, ferramenta que estou estudando no meu dia a dia. Os arquivos estão no caminho 
+
+```
+  ./src/back-end/node 
+```
+com referência na raiz do projeto</p>
+
+Utilizei da biblioteca Express para realizar a construção da API.
+As funções que utilizei para checar os vencedores estão na pasta
+```
+  ./src/helpers
+```
 
 <h3>Como iniciar:</h3>
 
