@@ -21,7 +21,8 @@ body{
 
 .App-header {
   align-items: center;
-  background-image: linear-gradient(to right top, #8685ef, #6967b3, #4d4a7a, #323046, #171717);  color: white;
+  background-image: linear-gradient(to left bottom, #52489c, #423c78, #332f56, #252335, #171717);
+  color: rgb(241, 238, 238);
   display: flex;
   font-size: calc(10px + 2vmin);
   flex-direction: column;

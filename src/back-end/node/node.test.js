@@ -53,12 +53,7 @@ describe('Testa retorno da API',  () => {
     expect(response.data).toStrictEqual(filmes)
   })
   it('Testa se retorno da requisição POST é o esperado', async () => {
-    const metodoRequisicao = {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ selecionados })
-    };
-    const response = await axios('http://localhost:3002', metodoRequisicao)
+    const response = await axios.post('http://localhost:3002', {selecionados})
     expect(response.data).toStrictEqual(finalistas)
   })
 })

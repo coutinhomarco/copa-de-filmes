@@ -18,12 +18,15 @@
     "react-scripts": "5.0.0",
     "web-vitals": "^2.1.4"
   },
+  "jest": {
+    "modulePathIgnorePatterns": ["./src/App.test.js"]
+  },
   "scripts": {
     "start": "react-scripts start",
     "back": "node ./src/back-end/node/index.js && node ./src/back-end/node/app.js",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "test-back": "jest",
+    "jest": "jest",
     "eject": "react-scripts eject",
     "dev": "nodemon index.js"
   },
