@@ -1,5 +1,7 @@
 # Copa de filmes
 
+![alt text](Inicio.png)
+<br>
 Para fazer o clone do repositório digite o seguinte comando em seu terminal
 
 ```
@@ -22,11 +24,10 @@ ou
 yarn install
 ```
 
-
 <h2>Back End</h2>
 
 <h3>.NET</h3>
-<p>Tentei realizar a API via .NET mas por não ter tido contato em nenhum momento com o mesmo acabei não conseguindo. Os arquivos da tentativa estão na pasta api na raiz do projeto</p>
+<p>Tentei realizar a API via .NET, mas por ser meu primeiro contato com o mesmo tive bastante dificuldade e não acabei. Os arquivos da tentativa estão na pasta api na raiz do projeto</p>
 
 <h3>Node.js</h3>
 <p>Para não deixar em branco realizei o back end em Node.js, ferramenta que estou estudando no meu dia a dia. Os arquivos estão no caminho 
