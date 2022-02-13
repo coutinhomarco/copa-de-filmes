@@ -71,8 +71,18 @@ Os testes da API e do Front estão respectivamente nas pastas
 ```
 <h3>Como iniciar:</h3>
 
+Inicie a API com 
+```
+  npm run back
+```
+Inicie o script React com
+```
+npm start
+```
+e agora é só rodar
+
   ```
-    npm run test-back //para testes do backend
+    npm run jest //para testes do backend
     npm test //para testes do front
   ```
 
