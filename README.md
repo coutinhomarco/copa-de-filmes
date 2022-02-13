@@ -1,7 +1,5 @@
 # Copa de filmes
 
-Aplicação composta por um Front End que consome as API's e um Back End que cuida das requisições e regras do torneio.
-
 <h2>Front End</h2>
 
 Tecnologias utilizadas
