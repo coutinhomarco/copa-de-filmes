@@ -1,19 +1,7 @@
 # Copa de filmes
 
-<h2>Front End</h2>
-
-Tecnologias utilizadas
-
-<ul>
-  <li>React com componentes funcionais</li>
-  <li>Context API e React Hooks para gerenciamento de estado</li>
-  <li>React Router Dom para criação das rotas da Single Page Aplication</li>
-  <li>Eslint para padronização do código</li>
-</ul>
-
-<h3>Como iniciar:</h3>
-
-
+![alt text](Inicio.png)
+<br>
 Para fazer o clone do repositório digite o seguinte comando em seu terminal
 
 ```
@@ -36,16 +24,10 @@ ou
 yarn install
 ```
 
-Agora é só iniciar a aplicação com
-
-```
-npm start
-```
-
 <h2>Back End</h2>
 
 <h3>.NET</h3>
-<p>Tentei realizar a API via .NET mas por não ter tido contato em nenhum momento com o mesmo acabei não conseguindo. Os arquivos da tentativa estão na pasta api na raiz do projeto</p>
+<p>Tentei realizar a API via .NET, mas por ser meu primeiro contato com o mesmo tive bastante dificuldade e não acabei. Os arquivos da tentativa estão na pasta api na raiz do projeto</p>
 
 <h3>Node.js</h3>
 <p>Para não deixar em branco realizei o back end em Node.js, ferramenta que estou estudando no meu dia a dia. Os arquivos estão no caminho 
@@ -63,10 +45,29 @@ As funções que utilizei para checar os vencedores estão na pasta
 
 <h3>Como iniciar:</h3>
 
-Partindo do pressuposto que você já instalou as dependências, para iniciar o back-end basta executar o comando 
+Para iniciar o back-end basta executar o comando 
 ```
   npm run back
 ```
+<h2>Front End</h2>
+
+Tecnologias utilizadas
+
+<ul>
+  <li>React com componentes funcionais</li>
+  <li>Context API e React Hooks para gerenciamento de estado</li>
+  <li>React Router Dom para criação das rotas da Single Page Aplication</li>
+  <li>Eslint para padronização do código</li>
+</ul>
+
+<h3>Como iniciar:</h3>
+
+Para iniciar a aplicação execute
+
+```
+npm start
+```
+
 
 <h2>Testes</h2>
 
