@@ -1,14 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital@0;1&display=swap');
 
-@media screen and (max-width:1366px) {
-  body {
-    background-color: red;
-  }
-  form > div {
-    flex-basis: 50%;
-    height: 120px;
-  }
-}
+
 
 body{
   background-color: #171717;
@@ -150,6 +142,39 @@ a > button:hover {
   padding:5% 0;
 }
 
+li{
+  font-size:1.5em
+}
+
+li ::marker{
+  text-align: left;
+}
+
 #root > main {
   margin: 20px auto;
 }
+
+@media (max-width:900px) and (min-width:500px) {
+  form > div {
+    flex-basis: 10%;
+    height: 150px;
+  }
+  .card-filme{
+    width: 188px
+  }
+  .card-filme h4 {
+    width:90px !important;
+  }
+  }
+@media (max-width:500px) {
+  form > div {
+    flex-basis: 50%;
+    height: 150px;
+  }
+  .card-filme{
+    width: 188px
+  }
+  .card-filme h4 {
+    width:90px !important;
+  }
+  }
