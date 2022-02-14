@@ -1,0 +1,7 @@
+/home/marco/Desktop/portfolio/portfolio/.NET/api/obj/Debug/net5.0/api.csproj.AssemblyReference.cache
+/home/marco/Desktop/portfolio/portfolio/.NET/api/obj/Debug/net5.0/api.GeneratedMSBuildEditorConfig.editorconfig
+/home/marco/Desktop/portfolio/portfolio/.NET/api/obj/Debug/net5.0/api.AssemblyInfoInputs.cache
+/home/marco/Desktop/portfolio/portfolio/.NET/api/obj/Debug/net5.0/api.AssemblyInfo.cs
+/home/marco/Desktop/portfolio/portfolio/.NET/api/obj/Debug/net5.0/api.csproj.CoreCompileInputs.cache
+/home/marco/Desktop/portfolio/portfolio/.NET/api/obj/Debug/net5.0/api.MvcApplicationPartsAssemblyInfo.cs
+/home/marco/Desktop/portfolio/portfolio/.NET/api/obj/Debug/net5.0/api.MvcApplicationPartsAssemblyInfo.cache
