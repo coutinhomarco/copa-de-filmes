@@ -2,12 +2,6 @@
 
 ![alt text](Inicio.png)
 <br>
-Para fazer o clone do repositório digite o seguinte comando em seu terminal
-
-```
-git clone git@github.com:coutinhomarco/copa-de-filmes.git
-```
-
 
 Para fazer o clone do repositório digite o seguinte comando em seu terminal 
 
@@ -61,6 +55,11 @@ Tecnologias utilizadas
 </ul>
 
 <h3>Como iniciar:</h3>
+Inicie o back end com 
+
+```
+  npm run back
+```
 
 Para iniciar a aplicação execute
 
@@ -80,9 +79,11 @@ Os testes da API e do Front estão respectivamente nas pastas
 <h3>Como iniciar:</h3>
 
 Inicie a API com 
+
 ```
   npm run back
 ```
+
 Inicie o script React com
 ```
 npm start
