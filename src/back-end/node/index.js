@@ -1,5 +1,5 @@
 /* eslint-disable no-undef */
-const axios = require('axios');
+const {readFile} = require('fs/promises')
 const express = require('express');
 const bodyParser = require('body-parser');
 const cors = require('cors');
@@ -11,11 +11,12 @@ app.use(cors());
 
 app.get('/', async (_req, res) => {
   try {
-    const request = await axios.get('http://copafilmes.azurewebsites.net/api/filmes')
-    return res.status(200).json(request.data);
+    const filmes = await readFile('./src/back-end/data/filmes.js', 'utf-8')
+    const filmesParseados = JSON.parse(filmes)
+    return res.status(200).json(filmesParseados);
   }
   catch (err) {
-    res.status(400).send(err);
+    res.status(400).json({error: err.message});
   }
 });
 
