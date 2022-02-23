@@ -15,8 +15,8 @@ export default function FilmesProvider({children}) {
 
   useEffect(async () => {
     const filmesRequeridos = await fetchFilmes()
-    setCarregando(false)
     setFilmes(filmesRequeridos)
+    setCarregando(false)
   },[])
 
   const CONTEXT_VALUE = {filmes, carregando, setSelecionados, selecionados, setFinalistas, finalistas} 
