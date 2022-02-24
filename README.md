@@ -21,7 +21,7 @@ yarn install
 <h2>Back End</h2>
 
 <h3>Node.js</h3>
-<p>Para não deixar em branco realizei o back end em Node.js, ferramenta que estou estudando no meu dia a dia. Os arquivos estão no caminho 
+<p>Os arquivos estão no caminho 
 
 ```
   ./src/back-end/node 
