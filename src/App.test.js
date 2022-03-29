@@ -9,9 +9,9 @@ import { act } from 'react-dom/test-utils';
 
 const wrapper = ({children}) => (
   <MemoryRouter>
-  <FilmesProvider>
-    {children}
-  </FilmesProvider>
+    <FilmesProvider>
+      {children}
+    </FilmesProvider>
   </MemoryRouter>
 )
 describe('Testa renderização da aplicação', () => {
