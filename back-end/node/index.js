@@ -1,9 +1,9 @@
 /* eslint-disable no-undef */
-const {Filme} = require('../../models/index');
+const {Filme} = require('../sequelize/models');
 const express = require('express');
 const bodyParser = require('body-parser');
 const cors = require('cors');
-const retornaFinalistas = require('../../src/helpers/retornaFinalistas');
+const retornaFinalistas = require('../../front-end/src/helpers/retornaFinalistas');
 
 const app = express();
 app.use(bodyParser.json());
