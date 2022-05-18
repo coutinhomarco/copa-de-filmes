@@ -36,9 +36,14 @@ As funções que utilizei para checar os vencedores estão na pasta
 
 <h3>Como iniciar:</h3>
 
-Para iniciar o back-end basta executar o comando 
+Para iniciar o back-end basta executar os comandos 
 ```
+  npm run create
   npm run back
+```
+caso queira reiniciar o banco de dados
+```
+  npm run drop
 ```
 <h2>Front End</h2>
 
