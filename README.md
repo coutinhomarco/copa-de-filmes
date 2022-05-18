@@ -54,10 +54,6 @@ Tecnologias utilizadas
 <h3>Como iniciar:</h3>
 Inicie o back end com 
 
-```
-  npm run back
-```
-
 Para iniciar a aplicação execute
 
 ```
@@ -73,18 +69,9 @@ Os testes da API e do Front estão respectivamente nas pastas
   ./src/back-end/node/node.test.js
   ./src/App.test.js
 ```
-<h3>Como iniciar:</h3>
+<h3>Como testar:</h3>
 
-Inicie a API com 
-
-```
-  npm run back
-```
-
-Inicie o script React com
-```
-npm start
-```
+Inicie a API e o script React
 e agora é só rodar
 
   ```
