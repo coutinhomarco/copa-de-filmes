@@ -71,7 +71,7 @@ npm start
 Para criar os testes do projeto utilizei da biblioteca Jest para o Back end e React testing Library para o Front.
 Os testes da API e do Front estão respectivamente nas pastas
 ```
-  ./src/back-end/node/node.test.js
+  ./back-end/node/node.test.js
   ./src/App.test.js
 ```
 <h3>Como testar:</h3>
