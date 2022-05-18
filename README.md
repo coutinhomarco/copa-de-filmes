@@ -1,4 +1,4 @@
-# Copa de filmes ----- README DESATUALIZADO
+# Copa de filmes
 
 ![alt text](Inicio.png)
 <br>
